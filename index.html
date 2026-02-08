@@ -1,11 +1,1045 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EliteEscapes - Global Travel Experiences</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-    <h1>Elite Escapes</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <i class="fas fa-globe-americas brand-icon"></i>
+                <h2 class="brand-text mb-0">
+                    <span class="brand-elite">Elite</span><span class="brand-escapes">Escapes</span>
+                </h2>
+            </a>
+
+            <!-- Search Bar - Desktop -->
+            <div class="search-container d-none d-lg-block mx-auto">
+                <input type="text" class="search-input" placeholder="Search destinations, hotels, tours...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+
+            <!-- Mobile Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsed Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Mobile Search -->
+                <div class="search-container d-lg-none mt-3 mb-3">
+                    <input type="text" class="search-input" placeholder="Search destinations, hotels, tours...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+
+                <!-- Nav Links -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Banner Swiper -->
+    <section class="banner-section" id="home">
+        <div class="swiper swiper-banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                    style="background-image: url('https://images.pexels.com/photos/1381722/pexels-photo-1381722.jpeg');">
+                    <div class="banner-overlay"></div>
+                    <div class="banner-content">
+                        <h1 class="banner-title">Explore <span class="beige-text">Dubai</span></h1>
+                        <p class="banner-text">Welcome to the beaches of Dubai, enjoy the beauty of Arabian Nights</p>
+                        <div class="banner-buttons">
+                            <button class="btn btn-beige">Get Started</button>
+                            <button class="btn btn-outline-beige" data-video="dQw4w9WgXcQ">
+                                <i class="fa-solid fa-video me-2"></i>Watch Video
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide"
+                    style="background-image: url('https://images.pexels.com/photos/2574634/pexels-photo-2574634.jpeg');">
+                    <div class="banner-overlay"></div>
+                    <div class="banner-content">
+                        <h1 class="banner-title">Discover <span class="beige-text">Paris</span></h1>
+                        <p class="banner-text">Experience the romance and elegance of the City of Lights</p>
+                        <div class="banner-buttons">
+                            <button class="btn btn-beige">Get Started</button>
+                            <button class="btn btn-outline-beige" data-video="dQw4w9WgXcQ">
+                                <i class="fa-solid fa-video me-2"></i>Watch Video
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide"
+                    style="background-image: url('https://images.pexels.com/photos/3732494/pexels-photo-3732494.jpeg');">
+                    <div class="banner-overlay"></div>
+                    <div class="banner-content">
+                        <h1 class="banner-title">Experience <span class="beige-text">Thailand</span></h1>
+                        <p class="banner-text">Immerse yourself in exotic culture and pristine beaches</p>
+                        <div class="banner-buttons">
+                            <button class="btn btn-beige">Get Started</button>
+                            <button class="btn btn-outline-beige" data-video="dQw4w9WgXcQ">
+                                <i class="fa-solid fa-video me-2"></i>Watch Video
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide"
+                    style="background-image: url('https://images.pexels.com/photos/28448947/pexels-photo-28448947.jpeg');">
+                    <div class="banner-overlay"></div>
+                    <div class="banner-content">
+                        <h1 class="banner-title">Visit <span class="beige-text">Santorini</span></h1>
+                        <p class="banner-text">Discover the stunning white buildings and blue domes of Greece</p>
+                        <div class="banner-buttons">
+                            <button class="btn btn-beige">Get Started</button>
+                            <button class="btn btn-outline-beige" data-video="dQw4w9WgXcQ">
+                                <i class="fa-solid fa-video me-2"></i>Watch Video
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide"
+                    style="background-image: url('https://images.pexels.com/photos/26775378/pexels-photo-26775378.jpeg');">
+                    <div class="banner-overlay"></div>
+                    <div class="banner-content">
+                        <h1 class="banner-title">Explore <span class="beige-text">Abu Dhabi</span></h1>
+                        <p class="banner-text">Experience luxury and innovation in the heart of the desert</p>
+                        <div class="banner-buttons">
+                            <button class="btn btn-beige">Get Started</button>
+                            <button class="btn btn-outline-beige" data-video="dQw4w9WgXcQ">
+                                <i class="fa-solid fa-video me-2"></i>Watch Video
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide"
+                    style="background-image: url('https://images.pexels.com/photos/953182/pexels-photo-953182.jpeg');">
+                    <div class="banner-overlay"></div>
+                    <div class="banner-content">
+                        <h1 class="banner-title">Discover <span class="beige-text">Iceland</span></h1>
+                        <p class="banner-text">Witness the magic of Northern Lights and natural wonders</p>
+                        <div class="banner-buttons">
+                            <button class="btn btn-beige">Get Started</button>
+                            <button class="btn btn-outline-beige" data-video="dQw4w9WgXcQ">
+                                <i class="fa-solid fa-video me-2"></i>Watch Video
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide"
+                    style="background-image: url('https://images.pexels.com/photos/34431799/pexels-photo-34431799.jpeg');">
+                    <div class="banner-overlay"></div>
+                    <div class="banner-content">
+                        <h1 class="banner-title">Visit <span class="beige-text">Indonesia</span></h1>
+                        <p class="banner-text">Find peace in tropical paradise and ancient temples</p>
+                        <div class="banner-buttons">
+                            <button class="btn btn-beige">Get Started</button>
+                            <button class="btn btn-outline-beige" data-video="dQw4w9WgXcQ">
+                                <i class="fa-solid fa-video me-2"></i>Watch Video
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide"
+                    style="background-image: url('https://images.pexels.com/photos/1389339/pexels-photo-1389339.jpeg');">
+                    <div class="banner-overlay"></div>
+                    <div class="banner-content">
+                        <h1 class="banner-title">Experience <span class="beige-text">New York</span></h1>
+                        <p class="banner-text">Explore the city that never sleeps and iconic landmarks</p>
+                        <div class="banner-buttons">
+                            <button class="btn btn-beige">Get Started</button>
+                            <button class="btn btn-outline-beige" data-video="dQw4w9WgXcQ">
+                                <i class="fa-solid fa-video me-2"></i>Watch Video
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide"
+                    style="background-image: url('https://images.pexels.com/photos/3220846/pexels-photo-3220846.jpeg');">
+                    <div class="banner-overlay"></div>
+                    <div class="banner-content">
+                        <h1 class="banner-title">Discover <span class="beige-text">London</span></h1>
+                        <p class="banner-text">Immerse yourself in history, culture, and royal heritage</p>
+                        <div class="banner-buttons">
+                            <button class="btn btn-beige">Get Started</button>
+                            <button class="btn btn-outline-beige" data-video="dQw4w9WgXcQ">
+                                <i class="fa-solid fa-video me-2"></i>Watch Video
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <!-- Destinations Cards -->
+    <section class="destinations-section py-5">
+        <div class="container py-md-5">
+            <div class="row justify-content-center g-3 g-md-4">
+
+                <div class="col-6 col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="800">
+                    <div class="destination-card h-100">
+                        <i class="fa-solid fa-plane"></i>
+                        <h3>City & Nightlife</h3>
+                        <p class="d-none d-sm-block">
+                            Discover iconic skylines, vibrant nightlife, and unforgettable urban experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="destination-card h-100">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <h3>Tourist Visa</h3>
+                        <p class="d-none d-sm-block">
+                            Effortless visa assistance for smooth, secure, and worry-free global travel.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="destination-card h-100">
+                        <i class="fa-solid fa-compass"></i>
+                        <h3>Food & Culture</h3>
+                        <p class="d-none d-sm-block">
+                            Immerse yourself in authentic flavors, traditions, and rich cultural heritage.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="destination-card h-100">
+                        <i class="fa-solid fa-suitcase"></i>
+                        <h3>All-In-One Package</h3>
+                        <p class="d-none d-sm-block">
+                            Complete luxury travel solutions, thoughtfully curated from start to finish.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Us -->
+    <section class="about-section py-5" id="about">
+        <div class="container py-md-5">
+
+            <!-- Section Heading -->
+            <div class="row mb-4 mb-md-5">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h2 class="mb-0">Discover More <span class="beige-text">About Us</span></h2>
+                    <p class="text-white-50 mt-2">
+                        Redefining luxury travel through elegance, expertise, and unforgettable experiences.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row align-items-center g-4 g-lg-5">
+
+                <!-- Image -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-image">
+                        <img src="https://images.pexels.com/photos/32269240/pexels-photo-32269240.jpeg"
+                            class="img-fluid rounded" alt="Luxury Travel">
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="about-content">
+
+                        <h3 class="mb-3 mb-md-4">Crafting Extraordinary Journeys Worldwide</h3>
+
+                        <p class="mb-3 mb-md-4">
+                            At EliteEscapes, we specialize in creating personalized luxury travel experiences that
+                            transform
+                            dreams into reality. Every itinerary is thoughtfully designed to deliver elegance, comfort,
+                            and authentic cultural immersion.
+                        </p>
+
+                        <!-- Feature 1 -->
+                        <div class="about-feature d-flex gap-3 mb-3 mb-md-4">
+                            <div class="feature-icon flex-shrink-0">
+                                <i class="fa-solid fa-suitcase-rolling"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h5 class="mb-2">Bespoke Travel Experiences</h5>
+                                <p class="mb-0">
+                                    Tailor-made journeys crafted around your style, interests, and pace — because no two
+                                    travelers are the same.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="about-feature d-flex gap-3 mb-3 mb-md-4">
+                            <div class="feature-icon flex-shrink-0">
+                                <i class="fa-solid fa-bus-simple"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h5 class="mb-2">Seamless Luxury Transportation</h5>
+                                <p class="mb-0">
+                                    From private airport transfers to premium intercity travel, we ensure every movement
+                                    is smooth and stress-free.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="mb-0">
+                            Backed by over a decade of expertise, we have proudly guided thousands of travelers across
+                            iconic destinations,
+                            delivering exceptional service, meticulous planning, and unforgettable memories.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Progress Section -->
+    <section class="progress-section py-5">
+        <div class="container py-md-5">
+            <div class="row mb-4">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h2 class="mb-2">Popular <span class="beige-text">Destinations</span></h2>
+                    <p class="text-muted mb-0">Traveler satisfaction ratings</p>
+                </div>
+            </div>
+            <div class="row g-3 g-md-4">
+                <div class="col-md-6" data-aos="fade-up">
+                    <h5 class="mb-2">Dubai </h5>
+                    <div class="progress-custom">
+                        <div class="progress-bar-custom" style="width: 95%">95%</div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="mb-2">Paris</h5>
+                    <div class="progress-custom">
+                        <div class="progress-bar-custom" style="width: 78%">78%</div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="mb-2">Greece</h5>
+                    <div class="progress-custom">
+                        <div class="progress-bar-custom" style="width: 92%">92%</div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="mb-2">Thailand</h5>
+                    <div class="progress-custom">
+                        <div class="progress-bar-custom" style="width: 88%">88%</div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <h5 class="mb-2">London</h5>
+                    <div class="progress-custom">
+                        <div class="progress-bar-custom" style="width: 76%">76%</div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <h5 class="mb-2">Bali</h5>
+                    <div class="progress-custom">
+                        <div class="progress-bar-custom" style="width: 84%">84%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners-section">
+        <div class="container-fluid">
+            <div class="row mb-4 mb-md-5">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h2 class="mb-0">Our <span class="beige-text">Partners</span></h2>
+                </div>
+            </div>
+
+            <div class="partners-marquee" data-aos="fade-up">
+                <div class="marquee-content">
+                    <!-- First set -->
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-airbnb"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-microsoft"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-amazon"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-meta"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-spotify"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-slack"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-dropbox"></i>
+                    </div>
+
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-airbnb"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-microsoft"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-amazon"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-meta"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-spotify"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-slack"></i>
+                    </div>
+                    <div class="partner-logo">
+                        <i class="fa-brands fa-dropbox"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services-section py-5" id="services">
+        <div class="container py-md-5">
+
+            <!-- Section Heading -->
+            <div class="row mb-4 mb-md-5">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h2 class="mb-0">Our <span class="beige-text">Signature Services</span></h2>
+                    <p class="text-white-50 mt-2">
+                        Designed to deliver seamless, indulgent, and unforgettable travel experiences.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-3 g-md-4">
+
+                <!-- Flight Booking -->
+                <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card h-100">
+                        <i class="fa-solid fa-plane"></i>
+                        <h3>Luxury Flight Booking</h3>
+                        <p>
+                            Handpicked flight options with premium airlines, priority services, and exclusive fares for
+                            a flawless journey.
+                        </p>
+                        <button class="btn btn-beige-outline mt-auto">Explore Flights</button>
+                    </div>
+                </div>
+
+                <!-- Hotel Booking -->
+                <div class="col-sm-6 col-lg-4" data-aos="fade-up">
+                    <div class="service-card h-100">
+                        <i class="fa-solid fa-hotel"></i>
+                        <h3>Premium Hotel Stays</h3>
+                        <p>
+                            Curated stays at world-class hotels and luxury resorts, selected for comfort, elegance, and
+                            exceptional service.
+                        </p>
+                        <button class="btn btn-beige-outline mt-auto">View Stays</button>
+                    </div>
+                </div>
+
+                <!-- Cab Rentals -->
+                <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card h-100">
+                        <i class="fa-solid fa-car"></i>
+                        <h3>Private Transfers</h3>
+                        <p>
+                            Reliable luxury transportation ensuring comfort, safety, and punctuality at every
+                            destination.
+                        </p>
+                        <button class="btn btn-beige-outline mt-auto">Book Transfers</button>
+                    </div>
+                </div>
+
+                <!-- Local Cuisine -->
+                <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card h-100">
+                        <i class="fa-solid fa-utensils"></i>
+                        <h3>Gourmet Experiences</h3>
+                        <p>
+                            Indulge in curated culinary journeys featuring authentic local flavors and fine dining
+                            experiences.
+                        </p>
+                        <button class="btn btn-beige-outline mt-auto">Discover Cuisine</button>
+                    </div>
+                </div>
+
+                <!-- Local Guide -->
+                <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card h-100">
+                        <i class="fa-solid fa-person"></i>
+                        <h3>Private Local Guides</h3>
+                        <p>
+                            Explore hidden gems and iconic landmarks with expert guides for rich cultural immersion.
+                        </p>
+                        <button class="btn btn-beige-outline mt-auto">Meet Guides</button>
+                    </div>
+                </div>
+
+                <!-- Customer Support -->
+                <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card h-100">
+                        <i class="fa-solid fa-headset"></i>
+                        <h3>24/7 Concierge Support</h3>
+                        <p>
+                            Dedicated travel concierges available around the clock to ensure your journey remains
+                            effortless.
+                        </p>
+                        <button class="btn btn-beige-outline mt-auto">Contact Support</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team -->
+    <section class="team-section py-5" id="team">
+        <div class="container py-md-5">
+            <div class="row mb-4 mb-md-5">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h2 class="mb-0">Meet the <span class="beige-text">Elite Team</span></h2>
+                    <p class="text-white-50 mt-2">A passionate team dedicated to crafting unforgettable luxury travel
+                        experiences worldwide.</p>
+                </div>
+            </div>
+            <div class="row g-3 g-md-4 justify-content-center">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                    <div class="team-card h-100">
+                        <div class="team-image">
+                            <img src="./assests/images/team-01.jpg" class="img-fluid" alt="Team Member">
+                        </div>
+                        <div class="team-content">
+                            <h3>Lucas Reinhardt</h3>
+                            <p class="role mb-2">Lead Travel Expert</p>
+                            <p class="description mb-0 d-none d-sm-block">Architect of bespoke luxury itineraries,
+                                delivering unforgettable global travel experiences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-card h-100">
+                        <div class="team-image">
+                            <img src="./assests/images/team-02.jpeg" class="img-fluid" alt="Team Member">
+                        </div>
+                        <div class="team-content">
+                            <h3>Sophia Laurent</h3>
+                            <p class="role mb-2">Client Experience Manager</p>
+                            <p class="description mb-0 d-none d-sm-block">Ensuring flawless journeys through seamless
+                                bookings and exceptional client care.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-card h-100">
+                        <div class="team-image">
+                            <img src="./assests/images/team-03.jpeg" class="img-fluid" alt="Team Member">
+                        </div>
+                        <div class="team-content">
+                            <h3>Ethan Navarro</h3>
+                            <p class="role mb-2">Global Relations Specialist</p>
+                            <p class="description mb-0 d-none d-sm-block">Connecting cultures, destinations, and people
+                                with precision and passion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-card h-100">
+                        <div class="team-image">
+                            <img src="./assests/images/team-04.jpg" class="img-fluid" alt="Team Member">
+                        </div>
+                        <div class="team-content">
+                            <h3>Isabella Moretti</h3>
+                            <p class="role mb-2">Luxury Travel Curator</p>
+                            <p class="description mb-0 d-none d-sm-block">Designing refined cultural and culinary
+                                adventures across iconic destinations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+        <div class="container py-md-5">
+            <!-- Section Title -->
+            <div class="row mb-4 justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="fw-bold mb-3">
+                        Frequently Asked <span class="beige-text">Questions</span>
+                    </h2>
+                    <p class="text-white-50 mb-0">
+                        Everything you need to know before planning your next luxury escape.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Accordion -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion" data-aos="fade-up" data-aos-delay="100">
+
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    What makes EliteEscapes different?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    EliteEscapes specializes in crafting bespoke luxury journeys tailored to your unique
+                                    preferences.
+                                    With exclusive partnerships, handpicked destinations, and 24/7 concierge support, we
+                                    ensure
+                                    every moment of your trip is seamless, indulgent, and unforgettable.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    When is the best time to visit Dubai?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The ideal season to explore Dubai is from November to April, offering pleasant
+                                    weather for
+                                    beach relaxation, desert safaris, and city adventures. Our travel specialists will
+                                    curate
+                                    the perfect itinerary based on your travel style and expectations.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    Do you provide travel insurance coverage?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer comprehensive travel insurance plans that include medical coverage,
+                                    trip cancellations,
+                                    baggage protection, and emergency assistance ensuring a stress-free travel
+                                    experience from
+                                    departure to return.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    How do I choose the right travel package?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our experts take the time to understand your travel goals, interests, timeline, and
+                                    budget
+                                    to design a personalized itinerary. You can schedule a complimentary consultation to
+                                    plan
+                                    your perfect escape with confidence.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq5">
+                                    What is your cancellation & refund policy?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer flexible cancellation policies with full refunds available up to 30 days
+                                    prior to
+                                    departure and partial refunds within 14 days, depending on the booking terms —
+                                    providing
+                                    complete peace of mind.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- End Accordion -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section py-5" id="contact">
+        <div class="container py-md-5">
+            <div class="row mb-4 mb-md-5">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h2 class="mb-0">Need Help? <span class="beige-text">Contact Us</span></h2>
+                </div>
+            </div>
+            <div class="row g-4 g-lg-5 mb-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-info">
+                        <div class="contact-item d-flex gap-3 mb-4">
+                            <i class="fa-solid fa-location-dot flex-shrink-0"></i>
+                            <div>
+                                <h4 class="mb-2">Address</h4>
+                                <p class="mb-0">Ecospace, Newtown, Kolkata-700009</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex gap-3 mb-4">
+                            <i class="fa-solid fa-phone flex-shrink-0"></i>
+                            <div>
+                                <h4 class="mb-2">Phone</h4>
+                                <p class="mb-0">+91-9098979695</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex gap-3">
+                            <i class="fa-regular fa-envelope flex-shrink-0"></i>
+                            <div>
+                                <h4 class="mb-2">Email</h4>
+                                <p class="mb-0">contact@eliteescapes.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <form class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-beige">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="map-container-full" data-aos="fade-up">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29467.81693362297!2d88.47302930000001!3d22.59865175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a020ac6499c8499%3A0x17c545e20b241d8d!2sEcospace%20Business%20Park!5e0!3m2!1sen!2sin!4v1761770329699!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-4 pb-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+
+                        <h3 class="mb-3 brand-text">
+                            <div class="brand-logo mb-2">
+                                <i class="fas fa-globe-americas brand-icon"></i>
+                                <span class="brand-elite">Elite</span>
+                                <span class="brand-escapes">Escapes</span>
+                        </h3>
+
+                        <p class="mb-3">Your trusted partner in creating extraordinary travel experiences since 2015. We
+                            turn your travel dreams into reality.</p>
+                        <div class="social-links d-flex gap-2">
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h4 class="mb-3">Company</h4>
+                    <ul class="footer-links list-unstyled mb-0">
+                        <li class="mb-2"><a href="#about">About Us</a></li>
+                        <li class="mb-2"><a href="#team">Our Team</a></li>
+                        <li class="mb-2"><a href="#">Careers</a></li>
+                        <li class="mb-2"><a href="#">Press</a></li>
+                        <li class="mb-2"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h4 class="mb-3">Services</h4>
+                    <ul class="footer-links list-unstyled mb-0">
+                        <li class="mb-2"><a href="#services">Hotel Booking</a></li>
+                        <li class="mb-2"><a href="#services">Flight Booking</a></li>
+                        <li class="mb-2"><a href="#services">Tour Packages</a></li>
+                        <li class="mb-2"><a href="#services">Travel Insurance</a></li>
+                        <li class="mb-2"><a href="#services">Visa Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h4 class="mb-3">Support</h4>
+                    <ul class="footer-links list-unstyled mb-0">
+                        <li class="mb-2"><a href="#contact">Contact Us</a></li>
+                        <li class="mb-2"><a href="#">Help Center</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#">Terms of Service</a></li>
+                        <li class="mb-2"><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h4 class="mb-3">Contact</h4>
+                    <ul class="footer-contact list-unstyled mb-0">
+                        <li class="mb-2 d-flex align-items-start gap-2"><i class="fa-solid fa-phone mt-1"></i>
+                            <span>+91-9098979695</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-start gap-2"><i class="fa-solid fa-envelope mt-1"></i>
+                            <span>contact@eliteescapes.com</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-start gap-2"><i class="fa-solid fa-location-dot mt-1"></i>
+                            <span>Ecospace, Kolkata</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom pt-4">
+                <div class="row align-items-center g-3">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2025 EliteEscapes All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0">Designed & Developed by <span class="beige-text"><a
+                                    href="https://github.com/SubhradeepNathGit" target="_blank"
+                                    rel="noopener noreferrer" class="beige-text text-decoration-none">Subhradeep
+                                    Nath</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50,
+            easing: 'ease-in-out'
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Initialize Swiper 
+        const swiper = new Swiper('.swiper-banner', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            speed: 1000,
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            }
+        });
+
+        // Smart autoplay pause (after 5s hover)
+        let hoverTimeout;
+        const banner = document.querySelector('.swiper-banner');
+
+        banner.addEventListener('mouseenter', () => {
+            hoverTimeout = setTimeout(() => {
+                swiper.autoplay.stop();
+                console.log('Autoplay paused after 5s hover');
+            }, 5000);
+        });
+
+        banner.addEventListener('mouseleave', () => {
+            clearTimeout(hoverTimeout);
+            swiper.autoplay.start();
+            console.log('Autoplay resumed');
+        });
+
+        // Ensure autoplay restarts after slides or touches
+        swiper.on('touchEnd', () => swiper.autoplay.start());
+        swiper.on('slideChangeTransitionEnd', () => swiper.autoplay.start());
+
+        // Banner text animation on slide change
+        swiper.on('slideChangeTransitionStart', function () {
+            const activeSlide = document.querySelector('.swiper-slide-active .banner-content');
+            if (activeSlide) {
+                const title = activeSlide.querySelector('.banner-title');
+                const text = activeSlide.querySelector('.banner-text');
+                const buttons = activeSlide.querySelector('.banner-buttons');
+
+                // Reset animations
+                title.style.animation = 'none';
+                text.style.animation = 'none';
+                buttons.style.animation = 'none';
+
+                // Trigger reflow
+                void title.offsetWidth;
+
+                // Reapply animations
+                setTimeout(() => {
+                    title.style.animation = 'fadeInUp 1s ease forwards';
+                    text.style.animation = 'fadeInUp 1s ease 0.2s forwards';
+                    buttons.style.animation = 'fadeInUp 1s ease 0.4s forwards';
+                }, 50);
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = target.offsetTop - navbarHeight;
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu if open
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        navbarCollapse.classList.remove('show');
+                    }
+                }
+            });
+        });
+
+        // Contact Form Handler
+        document.querySelector('.contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for contacting us! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
 </body>
+
 </html>
