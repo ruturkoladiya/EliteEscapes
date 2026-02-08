@@ -1,13 +1,12 @@
-# 🌍 EliteEscapes — Luxury Travel Agency Landing Page
+# 🌍 EliteEscapes - Luxury Travel Agency Landing Page
 
 <p align="center">
-  <img src="./preview/preview1.png" width="33%">
-  <img src="./preview/preview2.png" width="33%">
-  <img src="./preview/Screenshot 2025-10-31 141137.png" width="33%">
-
-  <img src="./preview/Screenshot 2025-10-31 153949.png" width="33%">
-  <img src="./preview/Screenshot 2025-10-31 153827.png" width="33%">
-  <img src="./preview/Screenshot 2025-10-31 154033.png" width="33%">
+  <img src="./preview/preview-01.png" width="33%">
+  <img src="./preview/preview-02.png" width="33%">
+  <img src="./preview/preview-03.png" width="33%">
+  <img src="./preview/preview-04.png" width="33%">
+  <img src="./preview/preview-06.png" width="33%">
+  <img src="./preview/preview-07.png" width="33%">
 </p>
 
 🔗 **Live Demo:** [https://beyond-horizon-bay.vercel.app](https://beyond-horizon-bay.vercel.app)
